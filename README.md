@@ -16,6 +16,7 @@ They can be installed with command run in python terminal **-m pip install -r re
 
 ## Getting started
 To get started you should get your dependencies ready and use the following commands
+
 	set FLASK_APP=main.py for Windows
 	OR
 	export FLASK_APP=main.py for Unix
