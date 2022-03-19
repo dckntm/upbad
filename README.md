@@ -10,7 +10,7 @@ It's a web application displaying the amount of funny things happend to your col
 
 
 ## How to install dependencies
-They can be installed with command run in python terminal **-m pip install -r requirements.txt**
+They can be installed with command run in python terminal
 
 	$ -m pip install -r requirements.txt
 
