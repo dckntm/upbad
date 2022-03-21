@@ -1,10 +1,6 @@
-def sample_test_true():
+def sample_func():
     return True
 
 
-def sample_test_false():
-    return False
-
-
-assert sample_test_true() is True
-assert sample_test_false() is False
+def test_sample():
+    assert sample_func() is True
