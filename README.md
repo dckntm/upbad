@@ -5,7 +5,7 @@
 Upbad is a simple fun service for counting your and your teammates/friends fails.
 
 <p align="center">
-  <img alt="insert here program appearance" src="Example.jpg">
+  <img alt="insert here program appearance" src="img/Example.jpg">
 </p>
 
 ## How to install dependencies
