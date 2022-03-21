@@ -1,29 +1,35 @@
-<h1 align="center">Upbad things counter</h1>
+# Upbad things counter
 
 ## What it does?
-It's a web application displaying the amount of funny things happened to your colleagues
 
+Upbad is a simple fun service for counting your and your teammates/friends fails.
 
-<h4 align="center">
+<p align="center">
   <img alt="insert here program appearance" src="Example.jpg">
-</h4>
-
+</p>
 
 ## How to install dependencies
+
 They can be installed with command run in python terminal
 
-	$ pip install -r requirements.txt
+```sh
+pip install -r requirements.txt
+```
 
 ## Getting started
+
 To get started you should get your dependencies ready and use the following commands
 
-	$ set FLASK_APP=main.py
-    $ flask run
+### Windows
 
-<p>for Windows or</p>
+```sh
+set FLASK_APP=main.py
+flask run
+```
 
-	$ export FLASK_APP=main.py
-	$ flask run
+### Unix
 
-<p>for Unix</p>
-
+```sh
+export FLASK_APP=main.py
+flask run
+```
