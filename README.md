@@ -1,7 +1,7 @@
 <h1 align="center">Upbad things counter</h1>
 
 ## What it does?
-It's a web application displaying the amount of funny things happend to your colleagues
+It's a web application displaying the amount of funny things happened to your colleagues
 
 
 <h4 align="center">
@@ -12,14 +12,18 @@ It's a web application displaying the amount of funny things happend to your col
 ## How to install dependencies
 They can be installed with command run in python terminal
 
-	$ -m pip install -r requirements.txt
+	$ pip install -r requirements.txt
 
 ## Getting started
 To get started you should get your dependencies ready and use the following commands
 
-	set FLASK_APP=main.py for Windows
-	OR
-	export FLASK_APP=main.py for Unix
-	
-	flask run
+	$ set FLASK_APP=main.py
+    $ flask run
+
+<p>for Windows or</p>
+
+	$ export FLASK_APP=main.py
+	$ flask run
+
+<p>for Unix</p>
 
