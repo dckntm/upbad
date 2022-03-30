@@ -1,0 +1,21 @@
+version: "3.3"
+
+services:
+  upbad:
+    build: .
+    restart: always
+    ports:
+      - "5000:12345"
+    depends_on:
+      - mongo
+      - mongo-express
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "5001:27017"
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - "5002:8081"
