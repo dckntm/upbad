@@ -19,3 +19,5 @@ services:
     restart: always
     ports:
       - "5002:8081"
+    depends_on:
+      - mongo
