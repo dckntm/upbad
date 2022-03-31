@@ -2,9 +2,7 @@ FROM registry.access.redhat.com/ubi8/python-39
 
 WORKDIR /application
 
-COPY upbad/ .
-COPY upbad/* upbad/
-COPY requirements.txt .
+COPY . .
 
 RUN pip install -r requirements.txt
 ENV FLASK_APP=upbad/main.py

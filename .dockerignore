@@ -1,0 +1,8 @@
+README.md
+LICENSE
+docker-compose.yml
+.gitignore
+venv/
+tests/
+img/
+.pytest_cache/
