@@ -1,8 +1,9 @@
-FROM python:3.7.8
+FROM registry.access.redhat.com/ubi8/python-39
 
-WORKDIR /upbad
+WORKDIR /application
 
-COPY upbad .
+COPY upbad/ .
+COPY upbad/* upbad/
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
