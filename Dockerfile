@@ -1,8 +1,9 @@
-FROM python
+FROM python:3.7.8
 
 WORKDIR /upbad
 
-COPY . .
+COPY upbad .
+COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 ENV FLASK_APP=upbad/main.py
