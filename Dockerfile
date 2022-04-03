@@ -1,12 +1,18 @@
 FROM registry.access.redhat.com/ubi8/python-39
 
-WORKDIR /application
+# copy requirements as root user
+USER 0
+COPY /requirements.txt /etc
 
-COPY . .
+# install dependencies from requirements.txt
+RUN python -m pip install --upgrade pip
+RUN python -m pip install -r /etc/requirements.txt
 
-RUN pip install -r requirements.txt
-ENV FLASK_APP=upbad/main.py
+# copy source code
+COPY --chown=1001 ./upbad /opt/app-root/src/upbad
 
-EXPOSE 12345
+USER 1001
 
-CMD ["flask", "run", "--host", "0.0.0.0", "--port", "12345"]
+EXPOSE 8080
+
+CMD gunicorn upbad.wsgi

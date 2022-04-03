@@ -5,19 +5,21 @@ services:
     build: .
     restart: always
     ports:
-      - "5000:12345"
+      - "8080:8080"
     depends_on:
       - mongo
       - mongo-express
+    env_file:
+      - ./config/local.env
+
   mongo:
     image: mongo
     restart: always
-    ports:
-      - "5001:27017"
+
   mongo-express:
     image: mongo-express
     restart: always
     ports:
-      - "5002:8081"
+      - "8081:8081"
     depends_on:
       - mongo
