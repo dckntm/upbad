@@ -1,0 +1,27 @@
+version: "3.3"
+
+services:
+  upbad:
+    build: .
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+      - mongo-express
+    env_file:
+      - ./config/local.env
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongo
